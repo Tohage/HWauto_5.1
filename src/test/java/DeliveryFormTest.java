@@ -1,12 +1,8 @@
 import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.Keys;
-
 import java.time.Duration;
-
 import static com.codeborne.selenide.Selenide.*;
-import static org.openqa.selenium.Keys.BACK_SPACE;
 
 class DeliveryFormTest {
 
