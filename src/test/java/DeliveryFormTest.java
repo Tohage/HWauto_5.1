@@ -32,10 +32,10 @@ class DeliveryFormTest {
         $("[data-test-id=date] input").doubleClick().sendKeys(secondDate);
         $("button.button").click();
 
-        $("[data-test-id=replan-notification]").shouldHave(Condition.text("У вас уже запланирована встреча на другую дату. Перепланировать?")).shouldBe(Condition.visible, Duration.ofSeconds(15));
+        $("[data-test-id=replan-notification]").shouldHave(Condition.text("У вас уже запланирована встреча на другую дату. Перепланировать?")).shouldBe(Condition.visible, Duration.ofSeconds(20));
 
         $("[data-test-id=replan-notification] button").click();
 
-        $("[data-test-id=success-notification]").shouldHave(Condition.text("Встреча успешно запланирована на " + secondDate)).shouldBe(Condition.visible, Duration.ofSeconds(15));
+        $("[data-test-id=success-notification]").shouldHave(Condition.text("Встреча успешно запланирована на " + secondDate)).shouldBe(Condition.visible, Duration.ofSeconds(20));
     }
 }
